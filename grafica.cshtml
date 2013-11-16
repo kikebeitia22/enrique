@@ -1,0 +1,29 @@
+﻿
+
+
+@{
+    Page.title="grafica";
+}
+
+<section id="main">
+    <h1> Grafica de Ventas de Coffee Car </h1>
+     @{ 
+var myChart = new Chart(width: 600, height: 400) 
+   .AddTitle("Coffee Cars") 
+   .AddSeries(chartType: "column",
+      xValue: new[] {  "Maserrati", "BMW", "Audi Rojo", "Audi", "Eclipse" }, 
+      yValues: new[] { "2", "6", "4", "5", "3" }) 
+   .Write();
+}  
+</section>
+     
+ <div id="sidebar">
+    @*@Twitter.Search(
+        "#putyourhashtaghere", 
+        caption: "Búscanos", 
+        backgroundShellColor: "#e6e3d8", 
+        tweetsBackgroundColor: "#fdfcf7", 
+        shellColor: "#696969",
+        tweetsColor: "#696969",
+        tweetsLinksColor: "#a52f09")*@
+</div>
